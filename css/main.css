@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  background-color: #373A3C;
+}
+
+nav .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container .logo {
+  cursor: pointer;
+  animation: rotate 3s infinite;
+  font-size: 40px;
+  font-weight: 700;
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(23rem) rotateY(0deg) scale(1);
+  }
+  100% {
+    transform: perspective(23rem) rotateY(360deg) scale(1);
+  }
+}
+nav .container .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav .container .input {
+  width: 95px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav .container .input > i {
+  color: #8DD83D;
+  font-size: 17px;
+}
+nav .container select {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  color: white;
+  background-color: #373A3C;
+  cursor: pointer;
+}
+nav .container option {
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+nav .container .input .select_icon i {
+  color: #8DD83D;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-40%);
+}
+nav .container ul {
+  list-style: none;
+}
+nav .container a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+nav .container input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: #373A3C;
+}
+
+.hero {
+  background-image: url(../imgs/Star-Wars-Battlefront-II-combat.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 559px;
+}
+.hero .info {
+  margin-left: 770px;
+  margin-top: -299px;
+}
+.hero .info h1 {
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+}
+.hero .info p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: white;
+}
+.hero .info h2 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hero .info button {
+  padding: 10px 17px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  color: #FFFFFF;
+  font-size: 15px;
+  margin-right: 30px;
+  margin-bottom: 155px;
+  cursor: pointer;
+}
+.hero .info button:hover {
+  background: #8DD83D !important;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+.hero .info button:active {
+  transform: scale(0.9);
+}
+
+.section1 {
+  text-align: center;
+  background: #44484a;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+.section1 .container > h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.section1 .container > h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.card {
+  width: 350px;
+  text-align: left;
+  background-color: white;
+  align-items: center;
+}
+
+.card:hover {
+  border: 2px solid #4a8f00;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card2:hover {
+  border: 2px solid #4a8f00;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card3:hover {
+  border: 2px solid #4a8f00;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card > h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card > button {
+  margin-left: 45px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: #8DD83D;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card > button:hover {
+  background: #4a8f00 !important;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.card > button:active {
+  transform: scale(0.9);
+}
+
+.card2 {
+  width: 350px;
+  text-align: left;
+  background-color: white;
+  align-items: center;
+}
+
+.card2 img {
+  width: 100%;
+}
+
+.card2 > h3 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card2 > h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card2 > button {
+  margin-left: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: #8DD83D;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card2 > button:hover {
+  background: #4a8f00 !important;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.card2 > button:active {
+  transform: scale(0.9);
+}
+
+.card3 {
+  width: 350px;
+  text-align: left;
+  background-color: white;
+  align-items: center;
+}
+
+.card3 img {
+  width: 100%;
+}
+
+.card3 > h3 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card3 > h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #435766;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card3 > button {
+  margin-left: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: #8DD83D;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card3 > button:hover {
+  background: #4a8f00 !important;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.card3 > button:active {
+  transform: scale(0.9);
+}
+
+.section2 {
+  background-image: url(../imgs/Vector\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.section2 .info_section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.section2 .info_section2 h1 {
+  margin-left: 430px;
+  font-size: 36px;
+  line-height: 38px;
+  color: white;
+}
+.section2 .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+.section2 .card4 {
+  margin-left: 50px;
+}
+.section2 .card4:hover {
+  transform: scale(1.1);
+  border: 2px solid #4a8f00;
+}
+.section2 .card4 button {
+  padding: 15px 90px;
+  margin-left: 48px;
+  font-size: 14px;
+}
+.section2 .card4 button:hover {
+  background-color: #4a8f00;
+  transform: scale(1.1);
+}
+.section2 .card4 button:active {
+  background-color: #4a8f00;
+  transform: scale(0.9);
+}
+.section2 .card4 h3 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.section2 .card4 h1 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.section2 .button3 {
+  margin-left: 800px;
+  padding: 13px 35px;
+  margin-top: 30px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.section2 .button3:hover {
+  background: #4b9200;
+  transform: scale(1.1);
+}
+.section2 .button3:active {
+  background-color: #4a8f00;
+  transform: scale(0.9);
+}
+
+.section3 {
+  background-image: url(../imgs/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.section3 .info_section3 {
+  padding-top: 150px;
+  padding-left: 270px;
+  padding-bottom: 200px;
+}
+.section3 .info_section3 h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.section3 .info_section3 p {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+.section3 .info_section3 .button4 {
+  padding: 13px 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  color: white;
+  cursor: pointer;
+}
+.section3 .info_section3 .button4:hover {
+  background: #4b9200;
+  transform: scale(1.1);
+}
+.section3 .info_section3 .button4:active {
+  background-color: #4a8f00;
+  transform: scale(0.9);
+}
+.section3 .info_section3 button {
+  padding: 13px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  color: white;
+  cursor: pointer;
+}
+.section3 .info_section3 button:hover {
+  background: #4b9200;
+  transform: scale(1.1);
+}
+.section3 .info_section3 button:active {
+  background-color: #4a8f00;
+  transform: scale(0.9);
+}
+
+footer {
+  background-color: #373A3C;
+  padding: 50px;
+  padding-bottom: 50px;
+}
+footer .info_footer {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container a {
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+}
+footer .container a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 5%;
+  background-color: #ffffff;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+footer .container a:hover::after {
+  width: 100%;
+  height: 10%;
+}
+footer .container h4 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+footer .container h3 {
+  color: #8DD83D;
+  margin-bottom: 30px;
+}
+footer .container .info_footer {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+footer .container .Followul {
+  cursor: pointer;
+}
+
+.hero1 {
+  background-image: url(../imgs/Vector\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}/*# sourceMappingURL=main.css.map */
